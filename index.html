@@ -9,6 +9,54 @@
     <title>Document</title>
 </head>
 <body>
+<div class="wrapper">
+<h1>Password Generator</h1>
+<div>
+    <input readonly class=" rounded-md border-pink-600 border-[2px]" >
+    <div>
+        <span>Copy</span>
+        <i class="fa-sharp fa-regular fa-copy" style="color: #80a6e9;"></i>
+    </div>
+</div>
+<div>
+    <div>
+        <h2>Password Length</h2>
+        <div>7</div>
+
+    </div>
+
+    <input type="range"  min="1" max="8" step="1">
+    <ul class="bg-purple-500">
+        <li> <input type="checkbox" id="Upper_case" >
+            <label for="Upper_case" > Include Upper Letter</label></li>
+       
+       <l1> <input type="checkbox" id="Lower_case">
+        <label for="Lower_case"> Include Lowercase</label></l1>
+
+        <li> <input type="checkbox" >
+            <label for="checkbox"> Include Number </label></li>
+
+        <li><input type="checkbox" id="Symbols" >
+            <label for="Symbols"> Include  Symbols</label>
+        </li>
+        
+       
+       
+       
+    </ul>
+    <div>
+        <h2>strength</h2>
+        <div> </div>
+    </div>
+
+    <button>Generate Password</button>
+</div>
+
+</div>
+
+
     <script src="index.js" ></script>
+<script  src="https://kit.fontawesome.com/ee2f739916.js" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
