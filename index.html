@@ -9,18 +9,18 @@
     <title>Document</title>
 </head>
 <body>
-<div class="wrapper bg-purple-900 h-screen w-screen items-center justify-center flex flex-col">
+<div class="wrapper bg-purple-700 h-screen w-screen items-center justify-center flex flex-col">
 <h1 class="text-white font-semibold text-5xl">Password Generator</h1>
 
-<div >
-    <input readonly class=" rounded-md border-pink-600 border-[2px]" placeholder="Password" >
+<div class="flex relative my-5">
+    <input readonly class=" rounded-md border-pink-600 border-[2px] h-10 w-72" placeholder="Password" >
     <div>
-        <span>Copy</span>
-        <i class="fa-sharp fa-regular fa-copy" style="color: #80a6e9;"></i>
+        <span class=" flex absolute">Copy</span>
+        <i class="fa-sharp fa-regular fa-copy flex absolute right-[10px] bottom-[5px]" style="color: #80a6e9;"></i>
     </div>
 </div>
-<div>
-    <div>
+<div class="bg-purple-950 px-16  py-5 border rounded-lg h-72">
+    <div class="flex gap-10">
         <h2>Password Length</h2>
         <div>7</div>
 
