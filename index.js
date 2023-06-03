@@ -31,14 +31,33 @@ function handleslider()
 
 function changecolor(color)
 {
-
-
     Indicator.style.backgroundColor=color;
-
 
 }
 
+// get random integer
 
+function getrendomno(min,max)
+{
+let no=Math.floor(Math.random()*(max-min)+min);
+return no;
 
+}
+function generaterandomno()
+{
+    let no=getrendomno(0,9);
+}
+function generatelowercase()
+{
+
+}
+function generateuppercase()
+{
+
+}
+function generatesymbols()
+{
+    
+}
 
 
