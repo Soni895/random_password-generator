@@ -13,5 +13,15 @@ let Password="";
 let Plength=10;
 let Check_count=1;
 
+// handle slider function
+// set password length
+function handleslider()
+{
+    Slider.value=Plength;
+    Password_length.textContent=Plength;
+    
+}
+
+
 
 
