@@ -12,6 +12,8 @@ let Strength=document.querySelector("[Strength]");
 let Password="";
 let Plength=10;
 let Check_count=1;
+handleslider();
+changecolor("pink");
 
 // handle slider function
 // set password length
@@ -21,6 +23,21 @@ function handleslider()
     Password_length.textContent=Plength;
     
 }
+
+
+
+// set indicator color
+
+
+function changecolor(color)
+{
+
+
+    Indicator.style.backgroundColor=color;
+
+
+}
+
 
 
 
