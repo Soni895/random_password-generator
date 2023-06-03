@@ -68,5 +68,9 @@ let no=generaterandomno(0,(Symbole.length));
 return Symbole[no];
 
 }
+function calculatestrength()
+{
+
+}
 
 
