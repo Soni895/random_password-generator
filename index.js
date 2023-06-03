@@ -64,7 +64,7 @@ function generateuppercase()
 function generatesymbols()
 {
 
-let no=generaterandomno(0,(Symbole.length)-1);
+let no=generaterandomno(0,(Symbole.length));
 return Symbole[no];
 
 }
