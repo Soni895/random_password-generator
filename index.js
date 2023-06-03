@@ -14,7 +14,7 @@ let Password="";
 let Plength=10;
 let Check_count=1;
 handleslider();
-changecolor("pink");
+// changecolor("pink");
 
 // handle slider function
 // set password length
@@ -22,6 +22,7 @@ function handleslider()
 {
     Slider.value=Plength;
     Password_length.textContent=Plength;
+    Indicator.style.backgroundColor="white";
     
 }
 
@@ -30,9 +31,23 @@ function handleslider()
 // set indicator color
 
 
-function changecolor(color)
+function changecolor()
 {
-    Indicator.style.backgroundColor=color;
+    let strength=calculatestrength();
+    if(strength=="weak")
+    {
+        Indicator.style.backgroundColor="red";
+    }
+    else
+    if(strength=="strong")
+    {
+        Indicator.style.backgroundColor="green";
+    }
+    else{
+        Indicator.style.backgroundColor="yellow";
+
+    }
+   
 
 }
 
@@ -70,7 +85,7 @@ return Symbole[no];
 }
 function calculatestrength()
 {
-   let upper=0,lower=1,number=1,symbole=1;
+   let upper=0,lower=0,number=0,symbole=0;
    if(Include_lowercase.Checked)lower=1;
    if(Include_uppercase.Checked)upper=1;
    if(Include_sumbols.Checked)symbol=1;
@@ -109,4 +124,5 @@ return "strong";
 // let content=generatesymbols();
 // console.log(content);
 calculatestrength("91345");
-console.log(calculatestrength());
+// console.log(calculatestrength());
+changecolor();
