@@ -22,20 +22,20 @@
 <div class="bg-purple-950 px-16  py-5 border rounded-lg h-80">
     <div class="flex gap-10">
         <h2>Password Length</h2>
-        <div>7</div>
+        <div Password_length>7</div>
 
     </div>
 
-    <input type="range"  min="1" max="20" step="1">
-    <ul class="">
-        <li class=""> <input type="checkbox" id="Upper_case" >
-            <label for="Upper_case" > Include Upper Letter</label></li>
+    <input type="range"  min="1" max="20" step="1" Slider>
+    <ul class="" id="Checklist">
+        <li class=""> <input type="checkbox" id="Uppercase" >
+            <label for="Uppercase" > Include Upper Letter</label></li>
        
-       <l1> <input type="checkbox" id="Lower_case">
-        <label for="Lower_case"> Include Lowercase</label></l1>
+       <l1> <input type="checkbox" id="Lowercase">
+        <label for="Lowercase"> Include Lowercase</label></l1>
 
-        <li> <input type="checkbox" >
-            <label for="checkbox"> Include Number </label></li>
+        <li> <input type="checkbox" id="Numbers">
+            <label for="Numbers" > Include Number </label></li>
 
         <li><input type="checkbox" id="Symbols" >
             <label for="Symbols"> Include  Symbols</label>
@@ -45,12 +45,12 @@
        
        
     </ul>
-    <div>
-        <h2>strength</h2>
-        <div> </div>
+    <div id="strength_indicator">
+        <h2 Strength>strength</h2>
+        <div Indicator> </div>
     </div>
 
-    <div class="bg-purple-500"> <button>Generate Password</button></div>
+    <div class="bg-purple-500" Generate_password> <button>Generate Password</button></div>
 </div>
 
 
