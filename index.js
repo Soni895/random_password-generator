@@ -8,6 +8,7 @@ let Include_lowercase=document.querySelector("#Lowercase");
 let Generate_password=document.querySelector("[Generate_password]");
 let Indicator=document.querySelector("[indicator]");
 let Strength=document.querySelector("[Strength]");
+let Symbole="~!@#$%^&*()_+-=*/{}:.<>?,./;'[]'|";
 
 let Password="";
 let Plength=10;
@@ -46,18 +47,26 @@ return no;
 function generaterandomno()
 {
     let no=getrendomno(0,9);
+    return no;
 }
 function generatelowercase()
 {
-
+    let no=getrendomno(97,123);
+    let char = String.fromCharCode(no);
+    return char;
 }
 function generateuppercase()
 {
-
+    let no=getrendomno(65,91);
+    let char = String.fromCharCode(no);
+    return char;
 }
 function generatesymbols()
 {
-    
+
+let no=generaterandomno(0,(Symbole.length)-1);
+return Symbole[no];
+
 }
 
 
