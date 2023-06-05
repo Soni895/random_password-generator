@@ -1,6 +1,7 @@
 let Password_length=document.querySelector("[Password_length]");
 let Slider=document.querySelector('[Slider]');
-let Check_list=document.querySelectorAll("#Checklist")
+let Check_list=document.querySelector("#Checklist");
+let Item=Check_list.querySelectorAll('input');
 let Include_number=document.querySelector("#Numbers");
 let Include_sumbols=document.querySelector("#Symbols");
 let Include_uppercase=document.querySelector("#Uppercase");
@@ -15,9 +16,7 @@ let Copy_icon=document.querySelector("[Copy_icon]");
 
 let Password="";
 let Plength=10;
-let Check_count=1;
 handleslider();
-// changecolor("pink");
 
 // handle slider function
 // set password length
@@ -151,14 +150,52 @@ Slider.addEventListener('input',event=>
     handleslider();
 
 } );
-Copy_icon.addEventListener("click",function(){
+Copy_icon.addEventListener("click",()=>{
     if(Password_display.value)
     {
         copycontent();
     }
 
 });
+
+// check box count
+
+// add addEventListener on checkbox
+
+Item.forEach(check_box=>{
+    check_box.addEventListener('change',box_count);
+})
+
+
+function box_count()
+{
+    Check_count=0;
+   for(let i=0;i<Item.length;i++)
+    {
+        if(Item[i].checked)
+        {
+            Check_count++;
+            
+
+        }
+        if(Check_count>Plength)
+    {
+        Plength=Check_count;
+        handleslider();
+    }
+    }
+
+}
+
+  
+
+
+
+
+
 // generate Password
+Generate_password.addEventListener("click",event=>{
+});
 
 
 
