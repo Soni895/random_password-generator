@@ -9,6 +9,8 @@ let Generate_password=document.querySelector("[Generate_password]");
 let Indicator=document.querySelector("[indicator]");
 let Strength=document.querySelector("[Strength]");
 let Symbole="~!@#$%^&*()_+-=*/{}:.<>?,./;'[]'|";
+let Password_display=document.querySelector("[password_display");
+let Copy_text=document.querySelector(".copy_text");
 
 let Password="";
 let Plength=10;
@@ -117,10 +119,32 @@ return "strong";
    else{
     return "weak";
    }
-   
-    
+}
+// copy content
+ async function copycontent()
+{
+    try{
+    await navigator.clipboard.writeText(Password_display);
+    Copy_text.innerHTML="copyed";
+
+    }
+
+    catch(e)
+    {
+        console.log("Try again");
+    }
+
+    Copy_text.classList.add("active");
+    setTimeout(() => {
+        Copy_text.classList.remove("active");
+        
+    }, 2000);
+
+
+
 
 }
+
 // let content=generatesymbols();
 // console.log(content);
 calculatestrength("91345");
