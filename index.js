@@ -156,9 +156,9 @@ Copy_icon.addEventListener("click",function(){
     {
         copycontent();
     }
-    copycontent();
 
 });
+// generate Password
 
 
 
