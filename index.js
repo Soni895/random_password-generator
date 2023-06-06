@@ -124,7 +124,8 @@ return Symbole[no];
 {
     try{
     await navigator.clipboard.writeText(Password_display.value);
-    Copy_text.innerHTML="copyed";
+    // Copy_text.innerHTML="copyed";
+    Copy_text.style.opacity="1";
 
     }
 
@@ -137,6 +138,7 @@ return Symbole[no];
     setTimeout(() => {
         // Copy_text.classList.remove("active");
         Copy_text.textContent="";
+        Copy_text.style.opacity="0";
         
     }, 2000);
 

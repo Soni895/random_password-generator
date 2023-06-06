@@ -18,7 +18,7 @@
 <div class="flex relative my-5 ">
     <input readonly class=" text-white rounded-md bg-[#34065c] border-b-2 h-12 w-96 placeholder-yellow-400 font-[5px] border-yellow-300 pl-6 tracking-widest text-2xl " placeholder="Password" password_display>
     <div class="curser cursor-pointer  " >
-        <span class=" flex absolute copy_text text-white font-semibold text-xl  bottom-10"></span>
+        <span class=" flex absolute copy_text  font-semibold text-xl border-b-2 border-yellow-300 text-yellow-300 px-3 rounded-lg bg-[#34065c] z-40 bottom-10 opacity-0 ">copy</span>
         <i class="fa-sharp fa-regular  fa-copy flex absolute right-[20px] bottom-[18px]  " style="color: yellow; " Copy_icon></i>
     </div>
 </div>
@@ -31,16 +31,16 @@
 
     <input class="border-2 border-yellow-300 h-5" type="range"  min="1" max="20" step="1" Slider>
     <ul class=" text-white font-semibold flex flex-col gap-2" id="Checklist">
-        <li class="flex gap-4"> <input type="checkbox" id="Uppercase" >
+        <li class="flex gap-4 items-center "> <input class="appearance-none  border-blue-500 border-2 rounded-md h-6 w-6 cursor-pointer checked:bg-gray-500 checked:border-green-900" type="checkbox" id="Uppercase" >
             <label for="Uppercase" > Include Upper Letter</label></li>
        
-       <l1 class="flex gap-4"> <input class=""  type="checkbox" id="Lowercase">
+       <l1 class="flex gap-4"> <input class="appearance-none  border-blue-500 border-2 rounded-md h-6 w-6 cursor-pointer checked:bg-gray-500 checked:border-green-900"  type="checkbox" id="Lowercase">
         <label for="Lowercase" class=""> Include Lowercase</label></l1>
 
-        <li class="flex gap-4"> <input type="checkbox" id="Numbers">
+        <li class="flex gap-4"> <input  class="appearance-none  border-blue-500 border-2 rounded-md h-6 w-6 cursor-pointer checked:bg-gray-500 checked:border-green-900" type="checkbox" id="Numbers">
             <label for="Numbers" > Include Number </label></li>
 
-        <li class="flex gap-4"><input type="checkbox" id="Symbols" >
+        <li class="flex gap-4"><input class="appearance-none  border-blue-500 border-2 rounded-md h-6 w-6 cursor-pointer checked:bg-gray-500 checked:border-green-900" type="checkbox" id="Symbols" >
             <label for="Symbols"> Include  Symbols</label>
         </li>
        
