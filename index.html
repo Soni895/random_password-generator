@@ -9,38 +9,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
 </head>
 <body>
-<div class="wrapper bg-purple-700 h-screen w-screen items-center justify-center flex flex-col">
-<h1 class="text-white font-semibold text-5xl">Password Generator</h1>
+<div class="wrapper  bg-[color:var(--lt-violet2)] h-screen w-screen items-center justify-center flex flex-col">
+<h1 class="text-white font-semibold text-3xl">Password Generator</h1>
 
-<div class="flex relative my-5">
-    <input readonly class=" rounded-md border-pink-600 border-[2px] h-10 w-72" placeholder="Password" password_display>
-    <div >
-        <span class=" flex absolute copy_text"></span>
-        <i class="fa-sharp fa-regular fa-copy flex absolute right-[10px] bottom-[5px]" style="color: #80a6e9;" Copy_icon></i>
+<div class="flex relative my-5 ">
+    <input readonly class=" text-white rounded-md bg-[#34065c] border-b-2 h-12 w-96 placeholder-yellow-400 font-[5px] border-yellow-300 pl-6 tracking-widest text-2xl " placeholder="Password" password_display>
+    <div class="curser cursor-pointer  " >
+        <span class=" flex absolute copy_text text-white font-semibold text-xl  bottom-10">copy</span>
+        <i class="fa-sharp fa-regular  fa-copy flex absolute right-[20px] bottom-[18px]  " style="color: yellow; " Copy_icon></i>
     </div>
 </div>
-<div class="bg-purple-950 px-16  py-5 border rounded-lg h-80">
-    <div class="flex gap-10">
-        <h2>Password Length</h2>
-        <div Password_length>0</div>
+<div class="bg-[#34065c]  flex flex-col justify-around px-7 border-b-2 rounded-lg border-yellow-300 h-96 w-80">
+    <div class="flex justify-between border-b-2 rounded pb-2 border-purple-500">
+        <h2 class="text-white text-lg font-bold">Password Length</h2>
+        <div Password_length class="text-yellow-300 font-bold text-lg" >0</div>
 
     </div>
 
     <input type="range"  min="1" max="20" step="1" Slider>
-    <ul class="" id="Checklist">
-        <li class=""> <input type="checkbox" id="Uppercase" >
+    <ul class=" text-white font-semibold flex flex-col gap-2" id="Checklist">
+        <li class="flex gap-4"> <input type="checkbox" id="Uppercase" >
             <label for="Uppercase" > Include Upper Letter</label></li>
        
-       <l1> <input type="checkbox" id="Lowercase">
-        <label for="Lowercase"> Include Lowercase</label></l1>
+       <l1 class="flex gap-4"> <input class=""  type="checkbox" id="Lowercase">
+        <label for="Lowercase" class=""> Include Lowercase</label></l1>
 
-        <li> <input type="checkbox" id="Numbers">
+        <li class="flex gap-4"> <input type="checkbox" id="Numbers">
             <label for="Numbers" > Include Number </label></li>
 
-        <li><input type="checkbox" id="Symbols" >
+        <li class="flex gap-4"><input type="checkbox" id="Symbols" >
             <label for="Symbols"> Include  Symbols</label>
         </li>
        

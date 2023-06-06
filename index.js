@@ -135,8 +135,8 @@ return Symbole[no];
 
     Copy_text.classList.add("active");
     setTimeout(() => {
-        Copy_text.classList.remove("active");
-        // Copy_text.textContent="";
+        // Copy_text.classList.remove("active");
+        Copy_text.textContent="";
         
     }, 2000);
 
