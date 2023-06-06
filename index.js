@@ -33,59 +33,73 @@ function handleslider()
 
 function changecolor()
 {
-    let strength=calculatestrength();
-    if(strength=="weak")
-    {
-        Indicator.style.backgroundColor="red";
-    }
-    else
-    if(strength=="strong")
+    // let strength=calculatestrength();
+    // if(strength=="weak")
+    // {
+    //     Indicator.style.backgroundColor="red";
+    // }
+    // else
+    // if(strength=="strong")
+    // {
+    //     Indicator.style.backgroundColor="green";
+    // }
+    // else{
+    //     Indicator.style.backgroundColor="yellow";
+
+    // }
+
+    if(Check_count==4||Check_count==3)
     {
         Indicator.style.backgroundColor="green";
     }
-    else{
+    else
+    if(Check_count==2)
+    {
         Indicator.style.backgroundColor="yellow";
+    }
+    else{
+        Indicator.style.backgroundColor="red";
 
     }
    
 
 }
 
-function calculatestrength()
-{
-   let upper=0,lower=0,number=0,symbole=0;
-   if(Include_lowercase.checked)lower=1;
-   if(Include_uppercase.checked)upper=1;
-   if(Include_sumbols.checked)symbole=1;
-   if(Include_number.checked)number=1;
+// function calculatestrength()
+// {
+//    let upper=0,lower=0,number=0,symbole=0;
+//    if(Include_lowercase.checked)lower=1;
+//    if(Include_uppercase.checked)upper=1;
+//    if(Include_sumbols.checked)symbole=1;
+//    if(Include_number.checked)number=1;
 
-   if(upper&&lower&&symbole&&number){
-    return "strong";
+//    if(upper&&lower&&symbole&&number){
+//     return "strong";
 
-   }
-   else if((upper&&lower&&symbole)||(upper&&lower&&number)||(upper&&symbole&&number)||(symbole&&lower&&number))
-   {
-    return "strong";
-   }
-   else
-   if((upper&&lower)||(upper&&number)||(upper&&symbole))
-   {
-    return "medium";
-   }
-   else
-   if((number&&lower)||(lower&&symbole))
-   {
-    return "medium";
-   }
-   else
-   if((number&&symbole))
-   {
-    return "medium";
-   }
-   else{
-    return "weak";
-   }
-}
+//    }
+//    else if((upper&&lower&&symbole)||(upper&&lower&&number)||(upper&&symbole&&number)||(symbole&&lower&&number))
+//    {
+//     return "strong";
+//    }
+//    else
+//    if((upper&&lower)||(upper&&number)||(upper&&symbole))
+//    {
+//     return "medium";
+//    }
+//    else
+//    if((number&&lower)||(lower&&symbole))
+//    {
+//     return "medium";
+//    }
+//    else
+//    if((number&&symbole))
+//    {
+//     return "medium";
+//    }
+//    else{
+//     return "weak";
+//    }
+// }
 
 // get random integer
 
