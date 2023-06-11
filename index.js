@@ -148,10 +148,10 @@ return Symbole[no];
         console.log("Try again");
     }
 
-    Copy_text.classList.add("active");
+//     Copy_text.classList.add("active");
     setTimeout(() => {
         // Copy_text.classList.remove("active");
-        Copy_text.textContent="";
+//         Copy_text.textContent="";
         Copy_text.style.opacity="0";
         
     }, 2000);
